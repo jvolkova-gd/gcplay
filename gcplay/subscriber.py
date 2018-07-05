@@ -18,7 +18,9 @@ def run_subscriber():
         logger.info("Topic %s already exist", topic_path)
 
     def callback(message):
-        print(message.data)
+        logger.info("Message id: %s \t Message attribute ip: %s \t "
+                    "Message data: %s \n", message.message_id,
+                    message.attributes["ip"], message.data)
         message.ack()
     future = subscriber.subscribe(subscription_name, callback)
     future.result()
