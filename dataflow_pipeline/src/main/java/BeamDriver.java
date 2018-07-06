@@ -40,7 +40,7 @@ public class BeamDriver {
         Integer getWindowSize();
         void setWindowSize(Integer value);
 
-        @Default.String("gs://hybrid-elysium-118418/dataflow/output-*.txt")
+        @Default.String("gs://hybrid-elysium-118418/dataflow/output.txt")
         String getOutput();
         void setOutput(String value);
 
