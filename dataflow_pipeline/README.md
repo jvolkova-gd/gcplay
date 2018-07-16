@@ -29,3 +29,13 @@ After what run this command, you need to change --project to your project name:
 It is not possible to delete Dataflow jobs. However, note that 
 you can filter the job list to only show the jobs you care about. 
 For example, Status:Running,Succeeded
+
+mvn archetype:generate \
+      -DarchetypeGroupId=org.apache.beam \
+      -DarchetypeArtifactId=beam-sdks-java-maven-archetypes-examples \
+      -DarchetypeVersion=2.5.0 \
+      -DgroupId=org.example \
+      -DartifactId=dataflow_pipeline \
+      -Dversion="0.1" \
+      -Dpackage=org.apache.beam.examples \
+      -DinteractiveMode=false

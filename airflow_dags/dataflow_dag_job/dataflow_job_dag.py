@@ -15,10 +15,10 @@ print_path_task = BashOperator(dag=dataflow_dag,
                                task_id="test_upstream_task_pwd")
 
 jar_task = DataFlowJavaOperator(dag=dataflow_dag,
-                                jar="/home/airflow/gcs/dags/jar/beam_playground-1.0.jar",
+                                jar="/home/airflow/gcs/dags/"
+                                    "jar/beam_playground-1.0.jar",
                                 dataflow_default_options= {
-                                    "project": "hybrid-elysium-118418",
-                                    "runner": "DataflowRunner" },
+                                    "project": "hybrid-elysium-118418"},
                                 task_id="dataflow_pipeline")
 
 print_path_task.set_downstream(jar_task)
