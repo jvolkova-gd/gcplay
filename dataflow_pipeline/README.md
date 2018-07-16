@@ -20,7 +20,8 @@ Before run jar run from terminal gcloud command to auth in platform:
     
 After what run this command, you need to change --project to your project name:
 
-    mvn compile exec:java -Dexec.mainClass=xnuinside.beam_playground.BeamDriver -Dexec.args="--project=hybrid-elysium-118418 --runner=DataflowRunner"
+    mvn compile exec:java -Dexec.mainClass=xnuinside.beam_playground.BeamDriver 
+    -Dexec.args="--project=hybrid-elysium-118418 --runner=DataflowRunner"
 
 
 ####How to delete a gcloud Dataflow job?
