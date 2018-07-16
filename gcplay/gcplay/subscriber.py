@@ -26,5 +26,5 @@ def run_subscriber():
     future.result()
 
 if __name__ == "__main__":
-    run_publisher()
+    #run_publisher()
     run_subscriber()
