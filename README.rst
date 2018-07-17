@@ -1,5 +1,5 @@
 **Python 3.6 required**
-
+export PYTHONPATH=${PYTHONPATH}:/path/to/project/gcplay/pubsub
 Before work with project - generate your own GCC auth key::
 
     https://cloud.google.com/pubsub/docs/reference/libraries

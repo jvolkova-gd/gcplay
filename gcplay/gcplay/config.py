@@ -1,6 +1,6 @@
 import logging
 import configparser
-from os import environ, getenv
+from os import environ
 from os import path
 from configparser import NoOptionError, NoSectionError
 
